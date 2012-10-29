@@ -1,15 +1,28 @@
 #!/usr/bin/env python
-def even_divisble(num):
-    for i in reversed(xrange(2, 21)):
-        if num % i != 0:
-            return False
+import math
 
-    return True
+def gcd(num1, num2):
+    if num1 < num2:
+        t = num1
+        num1 = num2
+        num2 = t
 
-start = 2520
-while True:
-    if even_divisble(start):
-        print start
-        break
+    remainder = num1 % num2
+    if remainder == 0:
+        return num2
     else:
-        start += 1
+        num1 = num2
+        num2 = remainder
+        return gcd(num1, num2)
+
+def lcm(num1, num2):
+    return num1 * num2 / gcd(num1, num2)
+
+i = 1
+for j in xrange(2, 21):
+    num = lcm(i,j)
+    i = num
+
+print i
+
+    
