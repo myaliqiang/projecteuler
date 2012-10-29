@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# 其实就是求这些数字的最小公倍数
 import math
 
 def gcd(num1, num2):
