@@ -14,8 +14,7 @@ def fraction_list():
 
 count = 0
 for (n, dn) in fraction_list():
-    #1 + i 
-    a, b = (n + dn, dn)
+    a, b = (n + dn, dn) #1 + n/dn
     if len(str(a)) > len(str(b)):
         count += 1
 
