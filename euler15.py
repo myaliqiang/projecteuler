@@ -8,11 +8,12 @@ cols = 20
 #so the n = 20 * 2, the r = 20
 #so our problem is find C40(20)
 #Cn(r) equals to n!/r!(n-r)!
-print Cnr(40, 20)
+
+print Cnr(rows * 2, rows)
 
 
-"""method two"""
-# # using dynamic programming to solve the problem 
+# """method two"""
+# # # using dynamic programming to solve the problem 
 # pre_list = {}
 
 # count = 0
