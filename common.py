@@ -1,4 +1,10 @@
 import math 
+def Cnr(n, r):
+    n_factorial = math.factorial(n)
+    r_factorial = math.factorial(r)
+    n_minus_r_factorial = math.factorial(n-r)
+    return n_factorial/r_factorial / n_minus_r_factorial
+    
 def get_divisors(n):
     divisors = []
     for i in xrange(1,(n+1)/2+1):
