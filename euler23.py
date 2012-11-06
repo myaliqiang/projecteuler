@@ -1,10 +1,10 @@
 #!/usr/bin/env python
-from common import get_divisors, get_divisors2
+from common import get_divisors
 
 def abundant_numbers():
     numbers = []
     for i in xrange(12,28123):
-        divisors = get_divisors(i)
+        divisors = get_divisors(i, True)
 
         sum_of_divisors = sum(divisors)
         if sum_of_divisors > i:
