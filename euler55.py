@@ -20,4 +20,3 @@ for i in xrange(1,10000):
     if lychrel_number(i):
         count += 1
 print count
-

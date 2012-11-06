@@ -1,4 +1,5 @@
-import math 
+import math
+
 def Cnr(n, r):
     n_factorial = math.factorial(n)
     r_factorial = math.factorial(r)

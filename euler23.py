@@ -9,7 +9,7 @@ def abundant_numbers():
         sum_of_divisors = sum(divisors)
         if sum_of_divisors > i:
             numbers.append(i)
-
+            
     return numbers
 
 dict = {}
